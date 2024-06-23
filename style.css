@@ -3,34 +3,74 @@
 *{
     padding: 0px;
     margin: 0px;
-    color: #ccc;
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
+    color: #ccc;
+    text-decoration: none;
 }
-body{
-    background: url(imagens/unnamed.jpg) no-repeat top center;
+
+.main-box{
+    background: url(imagens/unnamed.jpg) right no-repeat;
     background-size: cover;
-}
-header {
-    background-color: #020250;
     position: relative;
-    display: block;
     height: 100vh;
-    max-width: 300px;
-    padding: 10px;
-    align-items: center;
+    width: 100%;
 }
-h1{
-    text-align: center;
-    margin: 8px;
-    font-weight: bold;
+.main-box .sidebar {
+    position: fixed;
+    height: 100vh;
+    width: 300px;
+    background: #ccc3;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.333);
 }
-
-
-
-.icons {
-    position: relative;
+.sidebar .logo{
+    position: absolute;
+    width: 100%;
+    height: 60px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.333);
+}
+.sidebar .logo a {
+    position: absolute;
     left: 50%;
     transform: translate(-50%);
-    height: 64px;
-    padding: 10%;
+    line-height: 60px;
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+}
+.sidebar .menu {
+    position: absolute;
+    top: 80px;
+    width: 100%;
+}
+.sidebar .menu li {
+    width: 90%;
+    margin-left: 5%;
+    margin-top: 8px;
+    padding: 16px 20px;
+    list-style: none;
+    text-decoration: none;
+    background: rgba(0, 195, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, 0.4);
+}
+.sidebar .menu li:hover {
+    background: rgba(0, 195, 255, 0.25);
+    text-decoration: underline;
+    border: 1px solid rgba(0, 195, 255, 0.7);
+}
+.sidebar .menu li a {
+    color: white;
+    font-size: 16px;
+}
+.social-media {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+}
+.social-media img {
+    height: 24px;
 }
