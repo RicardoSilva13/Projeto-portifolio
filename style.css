@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    color: #ccc;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background: url(imagens/unnamed.jpg) no-repeat top center;
+    background-size: cover;
+}
+header {
+    background-color: #020250;
+    position: relative;
+    display: block;
+    height: 100vh;
+    max-width: 300px;
+    padding: 10px;
+    align-items: center;
+}
+h1{
+    text-align: center;
+    margin: 8px;
+    font-weight: bold;
+}
+
+
+
+.icons {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    height: 64px;
+    padding: 10%;
+}
